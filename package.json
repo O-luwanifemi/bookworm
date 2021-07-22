@@ -1,0 +1,40 @@
+{
+  "name": "bookworm",
+  "version": "1.0.0",
+  "description": "1. nodejs \r   2. express\r   3. bcrypt\r   4. cors \r   5. dotenv\r   6. jsonwebtoken \r   7. mongoose\r   8. nodemon (devDependency)\r   9. Postman",
+  "main": "Backend/src",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "start": "node Backend/src",
+    "server": "nodemon Backend/src",
+    "client": "npm start --prefix Frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "owner:seed": "node Backend/src/seeders/owner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-luwanifemi/bookworm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-luwanifemi/bookworm/issues"
+  },
+  "homepage": "https://github.com/O-luwanifemi/bookworm#readme",
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.2",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.9"
+  }
+}
